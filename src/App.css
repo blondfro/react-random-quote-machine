@@ -1,38 +1,61 @@
 .App {
   text-align: center;
+  background-color: #aa6539
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  background-color: #aa6539 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#quote-box {
+  background-color: #ffc8aa
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#quote-box {
+  border: 1px solid;
+  position: relative;
+  width: 600px;
+  height: 275px;
+  margin: auto;
+  margin-top: 20px;
+  color: #552100;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+span {
+  position: relative;
+  right: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  margin-bottom: 20px;
+  position: relative;
+  left: 30%;
+}
+
+#quote-box button {
+  justify-content: right;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary.active{
+  background-color: #552100 !important;
+  border: none !important;
+}
+
+.btn-primary:focus {
+  background-color: #552100 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important
+}
+
+.btn-primary:hover{
+  background-color: #d4946a !important;
+  color: black !important;
+  border: none !important;
+}
+
+.fa-twitter {
+  color: #803f15;
 }

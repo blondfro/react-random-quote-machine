@@ -25,10 +25,24 @@ function QuoteMachine() {
     }
 
     return (
-        <div>
-            <h1>{currAuthor.author}</h1>
-            <p>{currAuthor.quote}</p>
-            <button onClick={getQuote}>Next</button>
+        <div id="quote-box" className="justify-content-center">
+            <div id="text">
+                <h2>Author</h2>
+                <h6 id="author">{currAuthor.author}</h6>
+                <h4>Quote</h4>
+                <p id="quote">{currAuthor.quote}</p>
+            </div>
+            <div>
+                <span>
+                    <a id="tweet-quote" href="https://twiter.com/intent/tweet">tweet</a>
+                </span>
+                <button
+                    id="new-quote"
+                    type="button"
+                    className="btn btn-primary"
+                    onClick={getQuote}>Next Quote</button>
+            </div>
+
         </div>
     )
 }
