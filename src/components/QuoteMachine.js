@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {quoteData} from '../data/quoteData';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 function QuoteMachine() {
@@ -34,7 +35,14 @@ function QuoteMachine() {
             </div>
             <div>
                 <span>
-                    <a id="tweet-quote" href="https://twiter.com/intent/tweet">tweet</a>
+                    <a id="tweet-quote" href="https://twiter.com/">
+                        <FontAwesomeIcon
+                            icon={['fab', 'twitter']}
+                            size="2x"
+                            aria-hidden="true"
+                            className="fa-twitter"
+                        />
+                    </a>
                 </span>
                 <button
                     id="new-quote"
